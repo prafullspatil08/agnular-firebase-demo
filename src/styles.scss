@@ -1,6 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/stylesheets/scroll.scss";
+@import "./assets/stylesheets/buttons.scss";
+@import "./assets/stylesheets/typography.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: "Inter-medium";
+    src: url("./assets/fonts/Inter-Medium.ttf") format("truetype");
+  }
+  
+ html,body {
+   font-family: "Inter-medium", "sans-serif";
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin: 0;
+    @apply text-base;
+    @apply text-gray-800;
+    @apply dark:text-gray-200;
+  }
