@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./assets/stylesheets/scroll.scss";
-@import "./assets/stylesheets/buttons.scss";
-@import "./assets/stylesheets/typography.scss";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./assets/stylesheets/scroll.scss";
+@import "./assets/stylesheets/buttons.scss";
+@import "./assets/stylesheets/typography.scss";
 
 @font-face {
     font-family: "Inter-medium";
