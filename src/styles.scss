@@ -23,3 +23,7 @@
     @apply text-gray-800;
     @apply dark:text-gray-200;
   }
+
+  .form-input:focus{
+  @apply border-primary-500;
+}
