@@ -51,9 +51,8 @@ export class FirebaseService {
     return this.afAuth
       .createUserWithEmailAndPassword(email, password)
       .then((result) => {
-        /* Call the SendVerificaitonMail() function when new user sign 
-          up and returns promise */
-        this.SendVerificationMail();
+        // this.SendVerificationMail();
+        this.router.navigate(['/auth/sign-in']);
         this.SetUserData(result.user);
       })
       .catch((error) => {

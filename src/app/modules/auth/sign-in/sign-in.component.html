@@ -7,13 +7,13 @@
                 <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg" alt="logo" /> -->
             </a>
         </div>
-        <form>
+        <form [formGroup]="signInForm" (ngSubmit)="signIn()">
             <div class="mb-6">
-                <input type="text" placeholder="Email"
+                <input type="text" placeholder="Email" formControlName="email"
                     class="w-full form-input px-4 py-3 rounded-md" />
             </div>
             <div class="mb-6">
-                <input type="password" placeholder="Password"
+                <input type="password" placeholder="Password" formControlName="password"
                     class="w-full form-input px-4 py-3 rounded-md" />
             </div>
             <div class="mb-10">

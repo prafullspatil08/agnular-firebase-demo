@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RegExpConstants } from '../../../core/constants/reg-exp-constants';
+import { FirebaseService } from '../../../core/services/firebase.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -14,6 +15,7 @@ export class SignUpComponent {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
+    private firebaseService: FirebaseService
   ) {
   }
 
@@ -47,6 +49,6 @@ export class SignUpComponent {
   }
 
   signUp(){
-    
+    this.firebaseService.SignUp(this.email.value,this.password.value)
   }
 }

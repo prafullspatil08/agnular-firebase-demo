@@ -8,18 +8,18 @@
                 <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg" alt="logo" /> -->
             </a>
         </div>
-        <form>
+        <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
             <div class="mb-6">
-                <input type="text" placeholder="Email"
+                <input type="text" placeholder="Email" formControlName="email"
                     class="w-full form-input px-4 py-3 rounded-md" />
             </div>
-            <div class="mb-6">
-                <input type="password" placeholder="Password"
+            <div class="mb-6"> 
+                <input type="password" placeholder="Password" formControlName="password"
                     class="w-full form-input px-4 py-3 rounded-md" />
             </div>
             <div class="mb-10">
                 <button type="submit" class="btn-primary w-full">
-                    Sign In
+                    Sign Up
                 </button>
             </div>
         </form>
