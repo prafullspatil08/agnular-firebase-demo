@@ -4,6 +4,7 @@
         class="relative mx-auto max-w-[525px] overflow-hidden rounded-lg bg-white py-16 px-10 text-center sm:px-12 md:px-[60px] dark:bg-dark-2">
         <div class="mb-10 text-center md:mb-16">
             <a href="javascript:void(0)" class="mx-auto inline-block max-w-[160px]">
+                <h6>Sign Up</h6>
                 <!-- <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg" alt="logo" /> -->
             </a>
         </div>
@@ -45,14 +46,10 @@
                 </a>
             </li>
         </ul>
-        <a href="javascript:void(0)"
-            class="inline-block mb-2 hover:underline hover:text-primary-500">
-            Forget Password?
-        </a>
         <p>
-            <span class="pr-0.5">Not a member yet?</span>
-            <a [routerLink]="'/auth/sign-up'" class="text-primary-500 hover:underline">
-                Sign Up
+            <span class="pr-0.5">Already member?</span>
+            <a [routerLink]="'/auth/sign-in'" class="text-primary-500 hover:underline">
+                Sign In
             </a>
         </p>
     </div>
